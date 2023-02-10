@@ -1,0 +1,72 @@
+.highlighted-container{
+	height: 30vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.navbar-brand{
+	padding-left: 20px;
+}
+
+.nav-item{
+	padding-left: 10px;
+}
+
+/* unvisited link */
+.github-link:link, .github-link:visited, .github-link:active{
+	color: lightgrey;
+}
+
+.github-link:hover{
+	color: white;
+}
+
+.bottom-text{
+	padding-top: 30px;
+}
+
+.main{
+	padding: 5vh;
+}
+
+.form-group{
+	display: inline-block;
+}
+
+.title-group{
+	padding-left: 3vw;
+}
+
+.paste-group{
+	padding-top: 20px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.container-paste{
+	width: 80vw;
+}
+
+.info-container{
+	min-height: 60vh;
+}
+
+.img-desc{
+	padding-top: 20px;
+}
+
+.info-section{
+	width: 70vw;
+}
+
+.paste-link:link, .paste-link:visited, .paste-link:active{
+	color: black;
+}
+
+.paste-link:hover{
+	color: grey;
+}
+
+.link-section{
+	padding-bottom: 10px;
+}
