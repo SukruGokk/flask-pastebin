@@ -20,7 +20,7 @@ run_with_lt(app)
 
 @app.route("/", methods = ['GET'])
 def index():
-	return render_template('base.html')
+	return render_template('index.html')
 
 @app.route('/get')
 def get_route():
