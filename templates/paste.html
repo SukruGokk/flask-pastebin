@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+PPastebin - Saved paste
+{% endblock %}
+
+{% block content %}
+<div class="container main">
+    <h2 class="text-center">Saved paste</h2>
+    <hr class="hr" />
+    <div class="container container-paste">
+        <div class="link-section">
+            <span>Paste link: </span>
+            <a href="{{ link }}" class="paste-link">{{ link }}</a><br>
+        </div>
+        <div class="form-group author-group">
+          <label for="author-input">Author: </label>
+          <input type="input" name="author" class="form-control" id="author-input" value="{{ data["author"] }}" readonly>
+        </div>
+        <div class="form-group title-group">
+          <label for="title-input">Title: </label>
+          <input type="input" name="title" class="form-control" id="title-input" value="{{ data["title"] }}" readonly>
+        </div>
+        <br>
+        <div class="form-group paste-group">
+          <label for="paste-input">Paste: </label>
+          <textarea name="text" class="form-control" id="paste-input" rows="10" readonly>{{ data["text"] }}</textarea>
+        </div>
+    </div>
+</div>
+{% endblock %}
