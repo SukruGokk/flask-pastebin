@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+PPastebin - Home
+{% endblock %}
+
+{% block content %}
+<div class="highlight-clean highlighted-container" style="background: rgb(95,77,239);">
+  <div class="container">
+    <div class="intro">
+      <h2 class="text-center" style="color: #fff;margin-bottom: 15px;">
+        Python Flask Localtunnel Pastebin
+      </h2>
+      <p class="text-center bottom-text" style="color: #ccc;">
+        Just a simple pastebin system that made with Flask<br>Github repo: 
+        <a class='github-link' href='https://github.com/SukruGokk/python-flask-pastebin'>
+          https://github.com/SukruGokk/python-flask-pastebin
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="container main">
+    <h2 class="text-center">Create a new paste</h2>
+    <hr class="hr" />
+    <div class="container container-paste">
+      <form action="/create-paste" method="POST">
+        <div class="form-group author-group">
+          <label for="author-input">Author: </label>
+          <input type="input" name="author" class="form-control" id="author-input">
+        </div>
+        <div class="form-group title-group">
+          <label for="title-input">Title: </label>
+          <input type="input" name="title" class="form-control" id="title-input">
+        </div>
+        <br>
+        <div class="form-group paste-group">
+          <label for="paste-input">Paste: </label>
+          <textarea name="text" class="form-control" id="paste-input" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>  
+      </form>
+    </div>
+  </div>
+{% endblock %}
